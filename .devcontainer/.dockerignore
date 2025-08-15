@@ -1,0 +1,39 @@
+# Exclude artifacts, cache, and temporary files to speed up builds
+artifacts/
+01_basics/artifacts/
+data/*.parquet/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.coverage
+**/.tox/
+.git/
+.gitignore
+.vscode/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Exclude any problematic files that might cause tar errors
+**/*.lnk
+**/*.url
+**/desktop.ini
+**/.directory
+**/.localized
+
+# Exclude Windows-specific files that might have special permissions
+**/*.exe
+**/*.dll
+**/*.msi
+**/*.bat
+**/*.cmd
+**/*.ps1
+
+# Exclude any hidden system files
+.*
+!.dockerignore
+!.devcontainer/
